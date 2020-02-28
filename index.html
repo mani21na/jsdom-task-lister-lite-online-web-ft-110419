@@ -5,14 +5,19 @@
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body data-gr-c-s-loaded="true">
   <div id="main-content">
     <h1>Task Lister Lite™️</h1>
 
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input type="text" id="new-task-description" name="new-task-description" placeholder="description"><br><br>
+      <label for="new-task-priority">Task Priority:</label>
+      High <input type="radio" value="high" name="new-task-priority">
+      Medium <input type="radio" value="medium" name="new-task-priority">
+      Low <input type="radio" value="low" name="new-task-priority">
+      <br><br>
+      <input type="submit" value="Create New Task" id="submit">
     </form>
 
     <div id="list">
@@ -23,6 +28,8 @@
 
     <script src="./src/index.js"></script>
   </div>
+
+
 
 </body>
 </html>
